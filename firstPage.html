@@ -67,8 +67,8 @@
 <img src="images/links.png" alt="Image of Anchor Tag example" height=300px; width=600px>
 
 <h3>Table Element</h3>
-<p>The HTML <strong>&lt;table&gt;</strong> element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. Inside of <strong>&lt;table&gt;</strong>, there is <strong>&lt;tr&gt;</strong> which stands for <strong><em>Table Row</em></strong>. Usually you would style tables with CSS. Inside of the <strong>&lt;tr&gt;</strong>, there is <strong>&lt;td&gt;</strong>, which stands for <strong><em>Table Data</em></strong>. This tag holds the data for the table row.
-<p><strong>Example of a Table</strong>:</p><br>
+<p>The HTML <strong>&lt;table&gt;</strong> element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data. Inside of <strong>&lt;table&gt;</strong>, there is <strong>&lt;tr&gt;</strong> which stands for <strong><em>Table Row</em></strong>. Usually you would style tables with CSS. Inside of the <strong>&lt;tr&gt;</strong>, there is <strong>&lt;td&gt;</strong>, which stands for <strong><em>Table Data</em></strong>. This tag holds the data for the table row.  
+<p><h4>Example of a Table:</h4>
 &lt;table&gt;<br>
   &nbsp;&nbsp;&lt;tr&gt;<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Red&lt;/td&gt;<br>
@@ -83,6 +83,60 @@
     <td>Yellow</td>
   </tr>
 </table>
+
+<p>If you wanted to add a Table Heading, you would use the <strong>&lt;thead&gt;</strong> for the Heading section. You would then add the heading using <strong>&lt;th&gt;</strong>right under the <strong>&lt;tr&gt;</strong></p>
+<p>You would use the <strong>&lt;tbody&gt;</strong> for the Body section of the table. You would then add your regular table row and data.
+
+<h4>Example of a Table with Headings:</h4>
+&lt;table&gt;<br>
+  &nbsp;&nbsp;&lt;thead&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+  &nbsp;&nbsp;&lt;/thead&gt;<br>
+
+  &nbsp;&nbsp;&lt;tbody&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;20&lt;/td&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jack&lt;/td&gt;<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;26&lt;/td&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
+  &nbsp;&nbsp;&lt;/tbody&gt;<br>
+&lt;/table&gt;<br>
+
+The above command would look like this:<br>
+<table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>John</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Jack</td>
+      <td>26</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4>HTML Forms</h4>
+<p>The HTML &lt;form&gt; element represents a document section that contains interactive controls for submitting information to a web server.</p>
+<ul>
+  <li>Use the &lt;form&gt; tag</li>
+  <li>Use the &lt;input&gt; tag</li>
+  <li>Use the &lt;label&gt; tag</li>
+</ul>
+<br>
+<img src="images/formtag.png" height=300px; width=600px; alt="image form tag">
 
 
 
