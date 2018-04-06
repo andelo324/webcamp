@@ -13,7 +13,7 @@
 <!-- Paragraph elements -->
 <!-- <strong> represents bold and <em> represents emphasis/italics -->
 <p><strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. <em>Lorem Ipsum</em> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-<p>You use the <strong>&lt;p&gt;</strong> to signify a paragrah. You use <strong>&lt;strong&gt;</strong> to signify bold. You use <strong>&lt;em&gt;</strong> to signify emphasis/italics.
+<p>You use the <strong>&lt;p&gt;</strong> to signify a paragrah. You use <strong>&lt;strong&gt;</strong> to signify bold. You use <strong>&lt;em&gt;</strong> to signify emphasis/italics.</p>
   
   <!-- Orders Lists format uses <ol> -->
 <h3>Ordered Lists</h3>
@@ -129,7 +129,7 @@ The above command would look like this:<br>
 </table>
 
 <h4>HTML Forms</h4>
-<p>The HTML &lt;form&gt; element represents a document section that contains interactive controls for submitting information to a web server.</p>
+<p>The HTML <strong>&lt;form&gt;</strong> element represents a document(Container) section that contains interactive controls for submitting information to a web server. There are 2 attributes in a form. <strong>1. Action</strong> - where the form sends data to. <strong>2. Method</strong> - What HTTP method (Get - used for searching data/Post - sends data). The <strong>&lt;form&gt;</strong> tag is a block-level element</p>
 <ul>
   <li>Use the &lt;form&gt; tag</li>
   <li>Use the &lt;input&gt; tag</li>
@@ -137,9 +137,105 @@ The above command would look like this:<br>
 </ul>
 <br>
 <img src="images/formtag.png" height=300px; width=600px; alt="image form tag">
+<br><br><br>
+<img src="images/inputtag.png" height=300px; width=600px; alt="image input tag">
+<br><br><br>
+<p><strong>Example of a Form:</strong></p>
+<img src="images/exampleform.png" height=400px; width=500px; alt="image of example form tag">
+<br>
+<p><strong>Example of a Form</strong></p>
+<img src="images/labels.png" height=400px; width=500px; alt="image of example of label tag">
+<p>There are 2 ways to use a label tag</p>
+&lt;form action="/sign-in-url" method="post"&gt;<br>
+  &nbsp;&nbsp;&lt;label&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Username:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" placeholder="username"&gt;<br>
+  &nbsp;&nbsp;&lt;/label&gt;<br>
+  &nbsp;&nbsp;&lt;label&gt;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;Password:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="password" placeholder="password"&gt;<br>
+  &nbsp;&nbsp;&lt;/label&gt;<br>
+  &nbsp;&nbsp;&lt;button&gt;Login&lt;/button&gt;
+&lt;/form&gt;<br>
+<p>The above code would give this form:</p>
+<form action="https://www.wikipedia.org">
+  <label>
+    Username:
+    <input type="text" placeholder="username">
+  </label>
+  <label>
+    Password:
+    <input type="password" placeholder="password">
+  </label>
+  <button>Login</button> 
+</form>
+<p><strong>Or you can use the "for" and "id" attributes</strong></p>
+&lt;form action="/sign-in-url" method="post"&gt;<br>
+&nbsp;&nbsp;&lt;label <strong>for</strong>="username"&gt;Username&lts;/label&gt;<br>
+&nbsp;&nbsp;&lt;input <strong>id</strong>="username" type="text"&gt;<br>
+&nbsp;&nbsp;&lt;label <strong>for</strong>="password"&gt;Password&lts;/label&gt;<br>
+&nbsp;&nbsp;&lt;input <strong>id</strong>="username" type="text"&gt;<br>
+&nbsp;&nbsp;&lt;button&gt;Login&lt;/button&gt;<br>
+&lt;/form&gt;
+<p>The above code would give this form, which is the same as the above</p>
+<form action="https://www.wikipedia.org" method="post">
+  <label for="username">Username:</label>
+  <input id="username" type="text" placeholder="Username">
+  <label for="password">Password:</label>
+  <input for="password" type="password" placeholder="Password">
+  <button>Login</button>
+</form>
+<p><strong>Simple Validations</strong></p>
+<img src="images/validation.png" height=300px; width="600" alt="image of simple validation">
+<form action="https://www.wikipedia.com" method="post">
+  <label for="email">Email:</label>
+  <input id="email" type="email" required placeholder="Email address">
+  <label for="password">Password:</label>
+  <input id="password" type="password" required placeholder="Password">
+  <button>Login</button>
+</form>
+
+<h3>Dropdowns, Radio Buttons, Checkbox and TextArea</h3>
+&lt;input type="<strong>radio</strong>"&gt;<br>
+&lt;input type="<strong>checkbox</strong>"&gt;<br>
+&lt;<strong>select name="color"</strong>&gt;<br>
+  &nbsp;&nbsp;&lt;<strong>option value="red"</strong>&gt;Red&lt;<strong>/option</strong>&gt;<br>
+  &nbsp;&nbsp;&lt;<strong>optionvalue="orange"</strong>&gt;Orange&lt;<strong>/option</strong>&gt;<br>
+&lt;<strong>/select</strong>&gt;<br>
+&lt;<strong>textarea name="info" rows="10" cols="10"&gt;Write Something Here&lt;/textarea&gt;<br><br>
+
+<strong>The above code for Radio buttons would yield:</strong><br>
+<form>
+  <label for="dogs">Dogs</label>
+  <input name="petChoice" id="dogs" type="radio" value="DOG">
+  <label for="cats">Cats</label>
+  <input name="petChoice" id="cats" type="radio" value="CAT">
+  <button>Go!</button>
+</form>
+<p>We use the <strong>name</strong> attribute inside the input tag so that you can only select one radio button. The <strong>value</strong> attribute gives a value to the <strong>name</strong> attribute and passes that value when you submit</p>
+<strong>Ex:</strong><br>
+&lt;label for="dogs"&gt;Dogs&lt;/label&gt;<br>
+&lt;input <strong>name</strong>="petChoice" id="dogs" type="radio" <strong>value</strong>="dog"&gt;<br>
+<strong>The above code for Dropdown would yield:</strong><br>
+<form>
+  <select name="mood">
+    <option value="Happy">Smile</option>
+    <option value="Mellow">No Smile</option>
+    <option value="Sad">Cry</option>
+  </select>
+  <button>Go!</button>
+</form>
+
+<strong>The above code for TextArea would yield:</strong><br>
+<form>
+  <textarea name="info" rows="10" cols="20" placeholder="Write something Here"></textarea>
+  <button>Go!</button>
+</form>
+<input type="checkbox"><br>
 
 
-
-
+<br>
+<br>
+<br>
 </body>
 </html>
