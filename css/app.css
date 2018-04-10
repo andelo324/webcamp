@@ -1,0 +1,31 @@
+h1 {
+	color: red;
+	/*border-color: purple;
+	border-wdith: 5px;
+	border-style: solid;*/
+	border:  5px solid green;
+}
+h4 {
+	color: #FF8000;
+}
+h2 {
+	color: rgba(255,60,100,.6);
+}
+
+p {
+	color: rgb(255,255,255);
+}
+
+li {
+	color: rgb(0,255,255);
+}
+body {
+	background: #95a5a6;
+	/*background: url("../images/woodgrainbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;*/
+}
+
+div {
+	background: #3498db;
+}

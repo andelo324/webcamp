@@ -1,14 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Page for exercises</title>
+	<title>Intro to CSS</title>
 </head>
 <body>
-<table border="1">
-	<tr>
-
-
-
+<h1>General Rule for CSS</h1>
+<img src="images/cssgen.png" width="300px" height="100px">
+<h2>Examples</h2>
+<img src="images/cssexample.png" width="600px" height="300px">
+<div>
+	<h2>Two ways to write css (These are generally not recommended)</h2>
+	<ul>
+		<li>Inline</li>
+		<img src="images/cssinline.png" width="500px" height="200px">
+		<li>Style Tag(Generally used for debugging quickly)</li>
+		<img src="images/cssStyleTag.png" width="500px" height="250px">
+	</ul>
+</div>	
+<div>
+	<h2>Write CSS in a separate CSS File</h2>
+	<p><strong>Using the &lt;link&gt; tag</strong></p>
+	<img src="images/csslinktag.png" width="700px" height="400px">
+</div>
+<div>
+	<h2>Colors in CSS</h2>
+	<ul>
+		<li>About 147 different "named" colors to choose from</li>
+		<li>Hexadecimal Colors</li>
+			<ul>
+				<li>The first 2 places (left to right) corresponds to how much red is in the color</li>
+				<li>The next 2 places corresponds to how much green is in the color</li> 
+				<li>The last 2 places corresponds to how much blue is in the color</li>
+				<li>Search online for the hexadecimal value color picker</li>
+			</ul>
+		<li>RGB - 3 channels: Red, Green and Blue. Each Range from 0-255</li>
+			<ul>
+				<li>An example would be color: rgb(0,255,255); This would be the same in hex as #00FFFF</li>
+			</ul>
+		<li>RGBA - Just like RGB, but with an aplha(transparency) channel. Ranges from 0.0-1.0</li>
+			<ul>
+				<li>An example of RGBA would be color: rgba(0,255,255,.2)</li>
+			</ul>
+	</ul>
+</div>
+<div>
+	<h2>Color and Background</h2>
+	<p><strong>Use 'color' to set text color and 'background' for background color</strong></p>
+	<img src="images/cssbgcolor.png" height="200px" width="600px">
+</div>
+<div>
+	<h2>Background Image</h2>
+	<p><strong>The background property can also set a background iamge</strong></p>
+	<img src="images/cssbackimage.png" height="200px" width="600px">
+	<ul>
+		<li>You can use options like: <strong>background-repeat: no-repeat</strong> which won't tile</li>
+		<li>You can use options like: <strong>background-size: cover</strong> which will stretch the entire screen</li>
+	</ul>
+</div>
+<div>
+	<h2>Borders</h2>
+	<p><strong>In CSS, you can add borders around elements</strong></p>
+	<ul>
+		<li>border-color: purple;</li>
+		<li>border-width: 5px;</li>
+		<li>border-style: solid,dashed, etc;</li>
+		<li><strong>You can use a shortcut using: border: 5px, solid, purple</strong></li>
+	</ul>
+</div>
+<h2>CSS Selectors:</h2>
+<p><strong>The Basics: Element, ID, and Class</strong></p>
+<div>
+	<h3>Element Selector</h3>
+	<img src="images/elementselcss.png" height="300px" width="600px">
+</div>
+<div>
+	<h3>ID Selector (use # in css for ID Selector)</h3>
+	<img src="images/idselcss.png" height="300px" width="600px">
+</div>
+<div>
+	<h3>Class Selector (use . in css for Class Selector)</h3>
+	<img src="images/classcss.png" height="300px" width="600px">
+</div>
 
 
 </body>
