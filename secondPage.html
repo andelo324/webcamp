@@ -81,6 +81,34 @@
 	<h3>Class Selector (use . in css for Class Selector)</h3>
 	<img src="images/classcss.png" height="300px" width="600px">
 </div>
+<div>
+	<h3>More Selectors</h3>
+	<ul>
+		<li><strong>*  Selector</strong> - selects every single element on the page (Rarely used)</li>
+		<img src="images/starcss.png">
+		<li><strong>Descendant Selector (X Y)</strong> - When you want to target everything inside of an element and not others</li>
+		<img src="images/descendantcss.png">
+		<p>This example targets the anchors which are within an unordered list</p>
+		<li><strong>Adjacent Selector (X + Y)</strong> - It will select only the elemnt that is immediately proceded by the former element.</li>
+		<img src="images/adjcss.png">
+		<p>In this example, only the first paragraph after each ul will have a red text</p>
+		<li><strong>Attributes Selector (X[title])</strong> - This will only select the tags that have a title attribute</li>
+		<img src="images/attribcss.png">
+		<p>In this example, this will only select the anchor tags that have a title attribute</p>
+		<li><strong>X:nth-of-type(n) Selector</strong> - matches every element that is the <em>n</em>th child, of a particule type, of it's parent</li>
+		<img src="images/nthtypecss.png">
+		<p>This example will select only the 3rd ul and give it a border with 1px solid black</p>
+	</ul>
+</div>
+<div>
+	<h3>Specificity</h3>
+	<p><strong>Specificity</strong> - idea that we can have multiple styles targeting one element. Which ever is more <strong><em>specific</em></strong> usually wins. There are weights that determines which styles would win over other styles</p>
+	<ul>
+		<li>Elements and Pseduo-Elements (such as p, body, ul, etc): 1</li>
+		<li>Classes, attributes, and Pseduo-Elements (such as .whatever, input[type="text"]): 10</li>
+		<li>IDs (such as #whatever: 100</li>
+	</ul>	
+
 
 
 </body>
